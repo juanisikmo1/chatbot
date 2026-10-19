@@ -79,24 +79,6 @@ def responder(mensaje: str) -> str:
     )):
         return "Al finalizar y aprobar un programa de formación, el SENA puede otorgar un certificado o título según el tipo de programa cursado y los requisitos establecidos."
 
-    if any(gratuidad in texto for gratuidad in (
-        "el sena es gratis",
-        "cuanto cuesta estudiar",
-        "precio de los cursos",
-        "estudiar gratis",
-        "hay que pagar en el sena"
-    )):
-        return "La formación titulada y complementaria del SENA es generalmente gratuita. Consulta siempre la información oficial del programa para conocer sus condiciones y evitar posibles cobros fraudulentos."
-
-    if any(practicas in texto for practicas in (
-        "etapa productiva",
-        "practicas laborales",
-        "contrato de aprendizaje",
-        "como se hacen las practicas",
-        "experiencia laboral en el sena"
-    )):
-        return "Algunos programas del SENA incluyen una etapa productiva en la que el aprendiz aplica los conocimientos adquiridos en un entorno laboral. Las alternativas disponibles dependen del programa y de las normas vigentes."
-
     if any(beneficios in texto for beneficios in (
         "beneficios de estudiar en el sena",
         "ventajas del sena",
